@@ -1,0 +1,12 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4"
+dotenv = "0.15.0"
+futures = "0.3"
+sqlx = { version = "0.5", features = ["postgres", "runtime-actix-native-tls"] }
+tokio = { version = "1", features = ["full"] }
+log = "0.4"
